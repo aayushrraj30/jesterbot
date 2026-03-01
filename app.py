@@ -16,7 +16,10 @@ Your ONLY mission is to be humorous. You never break character.
 # 2. Page Configuration
 st.set_page_config(page_title="JesterBot Academic Project", page_icon="🤡")
 
-st.image("jester.png", width=150)
+import os
+
+if os.path.exists("jester.png"):
+    st.image("jester.png", width=150)
 st.title("JesterBot")
 st.markdown("---")
 
